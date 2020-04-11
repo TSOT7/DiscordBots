@@ -3,9 +3,6 @@ import discord
 import random
 from discord.ext import commands
 
-'''
-yo boi how are you nerd
-'''
 timeRunning = 0
 
 client = commands.Bot(command_prefix = '.')
@@ -56,8 +53,16 @@ async def _8ball(ctx, *, question):
 async def clear(ctx, amount=5):
     await ctx.channel.purge(limit=amount)
 
+@client.command()
+async def kick(ctx, member : discord.member, *,reason=None):
+    await member.kick(reason=reason)
 
+@client.command()
+async def ban(ctx, member : discord.member, *,reason=None):
+    await member.ban(reason=reason)
 
-
-
+# Place new token here
+ |
+ |
+ v
 client.run('token')
