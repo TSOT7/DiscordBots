@@ -3,6 +3,9 @@ import discord
 import random
 from discord.ext import commands
 
+'''
+yo boi how are you nerd
+'''
 timeRunning = 0
 
 client = commands.Bot(command_prefix = '.')
