@@ -24,6 +24,9 @@ async def on_member_remove(member):
 async def ping(ctx):
     await ctx.send(f'Pong! {round(client.latency * 1000)}ms')
 
+@client.command()
+# I giorno giovanna have a dream 
+
 @client.command(aliases=['8ball', 'test'])
 async def _8ball(ctx, *, question):
     responses = [
@@ -62,7 +65,4 @@ async def ban(ctx, member : discord.member, *,reason=None):
     await member.ban(reason=reason)
 
 # Place new token here
- |
- |
- v
-client.run('token')
+client.run('Njg0MTM5NTgyOTYyNDAxMzU0.XpTbuA.X-kyIlutS4vSgSCQZgmNFaDS3wQ')
